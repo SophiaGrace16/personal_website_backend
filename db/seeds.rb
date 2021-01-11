@@ -16,21 +16,21 @@ Project.create ([{
     projectName: "Dungeons & Dragons Database - Ruby & Sinatra Project",
     imageLink: "https://imgur.com/JSxJtkY", 
     summary: "For my second project, my goal was to create a project that utilized a Model-View-Controller organization, basic Content Management System, and user-authentication. For my project I chose to create a database where players and dungeon master's could store their character sheets or stories for Dungeons and Dragons.",
-    githubLink: "https://github.com/SophiaGrace16/sinatra_project"
+    githubLink: "https://github.com/SophiaGrace16/sinatra_project",
     demoLink: "https://www.youtube.com/watch?v=2lOEps5s9Z4"
 },
 {
     projectName: "The Dungeon - Ruby on Rails Project",
     imageLink: "https://imgur.com/JG7icE0", 
     summary: "My third project was a Ruby on Rails Application. I chose to recreate my second project so that I could add more features and functionality. My goal was to create a project that incorporated everything from my previous project and then add OmniAuth, a many to many relationship, and games feature where players and dungeon masters connected.",
-    githubLink: "https://github.com/SophiaGrace16/TheDungeon"
+    githubLink: "https://github.com/SophiaGrace16/TheDungeon",
     demoLink: "https://www.youtube.com/watch?v=bfoeTuvxdPc"
 },
 {
     projectName: "Disney & Pixar Easter Egg Hunt - Javascript Project",
     imageLink: "https://imgur.com/Gw9Z2wq", 
     summary: "The fourth project I created was a single page javascript application. For this project I created a site where users could click a pixar or disney movie and see all of the 'easter eggs' hidden throughout the movie.",
-    githubLink: "https://github.com/SophiaGrace16/js_project_frontend"
+    githubLink: "https://github.com/SophiaGrace16/js_project_frontend",
     demoLink: "https://www.youtube.com/watch?v=xMdTHd1feyI"
 }
 ])

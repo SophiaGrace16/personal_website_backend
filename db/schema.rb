@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2021_01_11_180233) do
 
   create_table "projects", force: :cascade do |t|
     t.string "projectName"
-    t.string "imagelink"
+    t.string "imageLink"
     t.text "summary"
     t.string "githubLink"
     t.string "demoLink"
