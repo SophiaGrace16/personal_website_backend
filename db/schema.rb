@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_11_175730) do
+ActiveRecord::Schema.define(version: 2021_01_11_180233) do
 
   create_table "educations", force: :cascade do |t|
     t.string "school"
@@ -18,6 +18,16 @@ ActiveRecord::Schema.define(version: 2021_01_11_175730) do
     t.string "startDate"
     t.string "endDate"
     t.string "degree"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "location"
+    t.string "jobTitle"
+    t.text "description"
+    t.string "startDate"
+    t.string "endDate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
