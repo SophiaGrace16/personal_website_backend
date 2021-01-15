@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_11_180233) do
+ActiveRecord::Schema.define(version: 2021_01_15_142401) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "content"
+    t.integer "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_comments_on_project_id"
+  end
 
   create_table "educations", force: :cascade do |t|
     t.string "school"
@@ -30,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_01_11_180233) do
     t.string "endDate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "company"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -42,4 +53,5 @@ ActiveRecord::Schema.define(version: 2021_01_11_180233) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "comments", "projects"
 end
