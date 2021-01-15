@@ -3,7 +3,13 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    if params[:project_id]
+      @project = Project.find(params[:project_id])
+      @comments = @project.comments
+    else
+      @comments = Comment.all
+    end
+    @comments = @project.comments
 
     render json: @comments
   end
